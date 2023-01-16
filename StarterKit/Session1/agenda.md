@@ -101,8 +101,6 @@ Discuss in the group:
 
 ### (5 mins) Independently - Identify business words and put them in a Words Cloud (freeform)
 
-Briefly discuss what it means to be important as a group (if you want to)
-
 * then, identify the 5 words you consider most important, and think if you are familiar with those words, if they make sense for you, how you understand them, especially if you make any asumption about those words, if the context is clear for you or if you need clarification.
 
 ### (10 mins) Together - Discuss
@@ -114,14 +112,12 @@ Discuss in the group:
 * is there a context that may arise ?
 
 
-
-
 Take turns in the group, and let every member talk about the code for 30 seconds (or less/more, could also be one sentence each). Try to add new information and not repeat things that have been said, and repeat until people do not know new things anymore.
 [Save the last word for me protocol](https://lead.nwp.org/knowledgebase/save-the-last-word-for-me-protocol/)
 
 ## Summary
 
-The goal of this exercise is to think about the core purpose or function of this code.
+The goal of this exercise is to think about the core purpose or function of this code, and how it may express a business concern.
 
 ### (5 mins) Independently - Summarize
 
