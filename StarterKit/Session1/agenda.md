@@ -83,27 +83,28 @@ Instantiation
 
 The goal of this exercise is to start to think about which lines in the code define its essence, have the biggest impact or need to be paid close attention to.
 
-### (5 mins) Independently - Identify most important lines that reflect the business or the use case
 
-Briefly discuss what it means to be important as a group (if you want to)
+### (5 mins) Together - Note down all variable/class/method names
 
-* then, identify the 5 lines you consider most important
-
-### (10 mins) Together - Discuss
-
-Discuss in the group:
-
-* lines covered by many people?
-* lines named but not by a lot of people
-* Agree less than 8 of the most important lines
-
-## Business Language and Context
-
-### (5 mins) Independently - Identify business words and put them in a Words Cloud (freeform)
-
-* then, identify the 5 words you consider most important, and think if you are familiar with those words, if they make sense for you, how you understand them, especially if you make any asumption about those words, if the context is clear for you or if you need clarification.
+As a group, go through the code mechanically and *create a list of all identifier names* in the snippet. This can be done with one person scribing while others call out. If you have done the "examine structure" exercise before, this should be relatively quick and easy; but sometimes, you will need short discussions to agree on things.
 
 ### (10 mins) Together - Discuss
+
+* What can we learn from these names / words / verbs ?
+* Which elements are related to each other, from the names only?
+* Are there names that are ambiguous when looked at without context?
+
+ >>>>>>>>> long discussion about if we keep the part about "important lines" or not <<<<<<<<<<<<<
+
+## Business Language and Context (free form)
+
+### (10 mins) Independently - Contextualize and try to Correlate
+
+*  given the words you consider most important,  think if you are familiar with those words, if they make sense for you, 
+how you understand them, especially if you make any asumption about those words, if the context is clear for you or if you need clarification.
+*  organize in a free form (drawing, grah, or simply sentences) how you would put the words according to their meaning and their context.
+
+### (5 mins) Together - Discuss
 
 Discuss in the group:
 
@@ -111,11 +112,19 @@ Discuss in the group:
 * words that seems not clear / ambiguous / not relevant
 * is there a context that may arise ?
 
+## Business Language Model (graph form)
 
-Take turns in the group, and let every member talk about the code for 30 seconds (or less/more, could also be one sentence each). Try to add new information and not repeat things that have been said, and repeat until people do not know new things anymore.
-[Save the last word for me protocol](https://lead.nwp.org/knowledgebase/save-the-last-word-for-me-protocol/)
+### (10 mins) Together - Represent as a conceptual graph
+
+* using potatoes and lines, group words and name relationship between the words you've choosen.
+* relationships are free form; they can be of any type, even unconvential ones. For example: is-a, is-related-to, is-close-to, has-elements, 
+    is-out-of-knowledge, is-an-alien ...
+    
+ At the end, we expect to observe a graph that contains the ubiquitous language, through the names of "entities" as well the names used in relationships labels.   
+
 
 ## Summary
+
 
 The goal of this exercise is to think about the core purpose or function of this code, and how it may express a business concern.
 
