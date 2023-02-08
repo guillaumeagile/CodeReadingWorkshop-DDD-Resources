@@ -14,6 +14,8 @@ You will need:
 
 Take a few minutes to talk about your motivation for doing the club. This is important because it will help you support each other and make it more likely that your group will feel that the club sessions have value for them.
 
+## organize parts that can be done in groups (Independently - groups - Together)
+
 ### (2 mins) Independently - Note down one thing about the club:
 
 * that you are looking forward to or excited about
@@ -94,7 +96,7 @@ As a group, go through the code mechanically and *create a list of all identifie
 * Which elements are related to each other, from the names only?
 * Are there names that are ambiguous when looked at without context?
 
- >>>>>>>>> long discussion about if we keep the part about "important lines" or not <<<<<<<<<<<<<
+ '>>>>>>>>> long discussion about if we keep the part about "important lines" or not <<<<<<<<<<<<<
 
 ## Business Language and Context (free form)
 
@@ -110,32 +112,28 @@ Discuss in the group:
 
 * words covered by many people?
 * words that seems not clear / ambiguous / not relevant
-* is there a context that may arise ?
+* is there one or several context(s) that may arise ?
+
 
 ## Business Language Model (graph form)
 
-### (10 mins) Together - Represent as a conceptual graph
+### (10 mins) Groups - Represent as a conceptual graph
 
-* using potatoes and lines, group words and name relationship between the words you've choosen.
+* using potatoes and lines, group words and name relationships between the words you've choosen.
 * relationships are free form; they can be of any type, even unconvential ones. For example: is-a, is-related-to, is-close-to, has-elements, 
     is-out-of-knowledge, is-an-alien ...
     
- At the end, we expect to observe a graph that contains the ubiquitous language, through the names of "entities" as well the names used in relationships labels.   
+ At the end, we expect to observe a graph that contains an expression of the ubiquitous language, through the names of "entities" as well the names used in relationships labels.   
 
 
 ## Summary
 
-
-The goal of this exercise is to think about the core purpose or function of this code, and how it may express a business concern.
-
-### (5 mins) Independently - Summarize
-
-* try to write down the essence of the code in a few sentences
+The goal of this exercise is to think about the shifts observed between a problem space and its solution space(s).
 
 ### (10 mins) Together - Discuss
 
-* topics covered by many vs few
-* strategies used to create the summary (e.g. method names, documentation, variable names, prior knowledge of system)
+* tbd
+* strategies used to create the Business Language Model (e.g. method names, documentation, variable names, prior knowledge of system)
 
 ## Reflect on the session
 
