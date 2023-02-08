@@ -1,6 +1,6 @@
-# Code Reading Club - Session 1 agenda
+# Code Reading Club - Session Read Code + Domail Model agenda
 
-## TOTAL time (75 mins)
+## TOTAL time (120 mins)
 
 You will need:
 
