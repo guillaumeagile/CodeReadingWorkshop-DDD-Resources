@@ -38,13 +38,13 @@ public class Plateau {
 		return true;
 	}
 
-	public boolean ontEnCommunUneCaractériqtique(Pièce... pièces) {
+	public boolean ontEnCommunUneCaractÃ©riqtique(PiÃ¨ce... piÃ¨ces) {
 		int somme[] = {0,0,0,0};
-		for (int i = 0; i < pièces.length; i++) {
-			if (pièces[i].estClaire()) 	somme[0] +=1;
-			if (pièces[i].estHaute()) 	somme[1] +=1;
-			if (pièces[i].estRonde())	somme[2] +=1;
-			if (pièces[i].estPleine())	somme[3] +=1;
+		for (int i = 0; i < piÃ¨ces.length; i++) {
+			if (piÃ¨ces[i].estClaire()) 	somme[0] +=1;
+			if (piÃ¨ces[i].estHaute()) 	somme[1] +=1;
+			if (piÃ¨ces[i].estRonde())	somme[2] +=1;
+			if (piÃ¨ces[i].estPleine())	somme[3] +=1;
 		}
 		return (somme[0] == 0 || somme[0] == 4 ||
 				somme[1] == 0 || somme[1] == 4 ||
@@ -52,48 +52,48 @@ public class Plateau {
 				somme[3] == 0 || somme[3] == 4);	
 	}
 
-	public boolean ligneComplèteEtVictorieuse(int ligne) {
+	public boolean ligneComplÃ¨teEtVictorieuse(int ligne) {
 		for (int colonne = 0; colonne < NOMBRE_COLONNES; colonne++) {
 			if (this.getCases()[ligne][colonne].estVide())
 				return false;
 		}
-		return ontEnCommunUneCaractériqtique(	this.getCases()[ligne][0].getPièce(),
-												this.getCases()[ligne][1].getPièce(),
-												this.getCases()[ligne][2].getPièce(),
-												this.getCases()[ligne][3].getPièce());
+		return ontEnCommunUneCaractÃ©riqtique(	this.getCases()[ligne][0].getPiÃ¨ce(),
+												this.getCases()[ligne][1].getPiÃ¨ce(),
+												this.getCases()[ligne][2].getPiÃ¨ce(),
+												this.getCases()[ligne][3].getPiÃ¨ce());
 	}
 
-	public boolean colonneComplèteEtVictorieuse(int colonne) {
+	public boolean colonneComplÃ¨teEtVictorieuse(int colonne) {
 		for (int ligne = 0; ligne < NOMBRE_LIGNES; ligne++) {
 			if (this.getCases()[ligne][colonne].estVide())
 				return false;
 		}
-		return ontEnCommunUneCaractériqtique(	this.getCases()[0][colonne].getPièce(),
-												this.getCases()[1][colonne].getPièce(),
-												this.getCases()[2][colonne].getPièce(),
-												this.getCases()[3][colonne].getPièce());
+		return ontEnCommunUneCaractÃ©riqtique(	this.getCases()[0][colonne].getPiÃ¨ce(),
+												this.getCases()[1][colonne].getPiÃ¨ce(),
+												this.getCases()[2][colonne].getPiÃ¨ce(),
+												this.getCases()[3][colonne].getPiÃ¨ce());
 	}
 
-	public boolean premièreDiagonaleComplèteEtVictorieuse() {
+	public boolean premiÃ¨reDiagonaleComplÃ¨teEtVictorieuse() {
 		for (int ligne = 0; ligne < NOMBRE_LIGNES; ligne++) {
 			if (this.getCases()[ligne][ligne].estVide())
 				return false;
 		}
-		return ontEnCommunUneCaractériqtique(	this.getCases()[0][0].getPièce(),
-												this.getCases()[1][1].getPièce(),
-												this.getCases()[2][2].getPièce(),
-												this.getCases()[3][3].getPièce());
+		return ontEnCommunUneCaractÃ©riqtique(	this.getCases()[0][0].getPiÃ¨ce(),
+												this.getCases()[1][1].getPiÃ¨ce(),
+												this.getCases()[2][2].getPiÃ¨ce(),
+												this.getCases()[3][3].getPiÃ¨ce());
 	}
 
-	public boolean deuxièmeDiagonaleComplèteEtVictorieuse() {
+	public boolean deuxiÃ¨meDiagonaleComplÃ¨teEtVictorieuse() {
 		for (int ligne = 0; ligne < NOMBRE_LIGNES; ligne++) {
 			if (this.getCases()[ligne][3-ligne].estVide())
 				return false;
 		}
-		return ontEnCommunUneCaractériqtique(	this.getCases()[0][3].getPièce(),
-												this.getCases()[1][2].getPièce(),
-												this.getCases()[2][1].getPièce(),
-												this.getCases()[3][0].getPièce());
+		return ontEnCommunUneCaractÃ©riqtique(	this.getCases()[0][3].getPiÃ¨ce(),
+												this.getCases()[1][2].getPiÃ¨ce(),
+												this.getCases()[2][1].getPiÃ¨ce(),
+												this.getCases()[3][0].getPiÃ¨ce());
 	}
 
 }
@@ -105,40 +105,40 @@ import java.util.Set;
 public class Quarto {
 	
 	private Plateau plateau;
-	private Set<Pièce> piècesRestantesAJouer;
+	private Set<PiÃ¨ce> piÃ¨cesRestantesAJouer;
 	
 	public Quarto() {
 		this.plateau = new Plateau();
-		this.piècesRestantesAJouer = new HashSet<>();
-		this.piècesRestantesAJouer.add(new Pièce(false,false,false,false));
-		this.piècesRestantesAJouer.add(new Pièce(false,false,false,true));
-		this.piècesRestantesAJouer.add(new Pièce(false,false,true,false));
-		this.piècesRestantesAJouer.add(new Pièce(false,false,true,true));
-		this.piècesRestantesAJouer.add(new Pièce(false,true,false,false));
-		this.piècesRestantesAJouer.add(new Pièce(false,true,false,true));
-		this.piècesRestantesAJouer.add(new Pièce(false,true,true,false));
-		this.piècesRestantesAJouer.add(new Pièce(false,true,true,true));
-		this.piècesRestantesAJouer.add(new Pièce(true,false,false,false));
-		this.piècesRestantesAJouer.add(new Pièce(true,false,false,true));
-		this.piècesRestantesAJouer.add(new Pièce(true,false,true,false));
-		this.piècesRestantesAJouer.add(new Pièce(true,false,true,true));
-		this.piècesRestantesAJouer.add(new Pièce(true,true,false,false));
-		this.piècesRestantesAJouer.add(new Pièce(true,true,false,true));
-		this.piècesRestantesAJouer.add(new Pièce(true,true,true,false));
-		this.piècesRestantesAJouer.add(new Pièce(true,true,true,true));
+		this.piÃ¨cesRestantesAJouer = new HashSet<>();
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,false,false,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,false,false,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,false,true,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,false,true,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,true,false,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,true,false,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,true,true,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(false,true,true,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,false,false,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,false,false,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,false,true,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,false,true,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,true,false,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,true,false,true));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,true,true,false));
+		this.piÃ¨cesRestantesAJouer.add(new PiÃ¨ce(true,true,true,true));
 	}
 
 	public boolean estVide() {
 		return this.plateau.estVide();
 	}
 
-	public int nombreDePiècesRestantAJouer() {
-		return this.piècesRestantesAJouer.size();
+	public int nombreDePiÃ¨cesRestantAJouer() {
+		return this.piÃ¨cesRestantesAJouer.size();
 	}
 
-	public boolean choisirUnePieceNonJouée(Pièce pièce) {
-		if (this.piècesRestantesAJouer.contains(pièce)) {
-			this.piècesRestantesAJouer.remove(pièce);
+	public boolean choisirUnePieceNonJouÃ©e(PiÃ¨ce piÃ¨ce) {
+		if (this.piÃ¨cesRestantesAJouer.contains(piÃ¨ce)) {
+			this.piÃ¨cesRestantesAJouer.remove(piÃ¨ce);
 			return true;
 		}
 		return false;
@@ -148,19 +148,19 @@ public class Quarto {
 		return this.plateau.getCases()[ligne][colonne].estVide();
 	}
 
-	public void poserPièce(Pièce pièce, int ligne, int colonne) {
+	public void poserPiÃ¨ce(PiÃ¨ce piÃ¨ce, int ligne, int colonne) {
 		if (!this.emplacementLibre(ligne, colonne)) {
 			throw new RuntimeException("Emplacement non Libre !");
 		}
-		this.plateau.getCases()[ligne][colonne].poserPièce(pièce);
+		this.plateau.getCases()[ligne][colonne].poserPiÃ¨ce(piÃ¨ce);
 		
 	}
 
 	public boolean coupVictorieux(int ligne, int colonne) {
-		return 	this.plateau.ligneComplèteEtVictorieuse(ligne) ||
-				this.plateau.colonneComplèteEtVictorieuse(colonne) ||
-				(ligne == colonne && this.plateau.premièreDiagonaleComplèteEtVictorieuse()) ||
-				(ligne + colonne == 3 && this.plateau.deuxièmeDiagonaleComplèteEtVictorieuse());
+		return 	this.plateau.ligneComplÃ¨teEtVictorieuse(ligne) ||
+				this.plateau.colonneComplÃ¨teEtVictorieuse(colonne) ||
+				(ligne == colonne && this.plateau.premiÃ¨reDiagonaleComplÃ¨teEtVictorieuse()) ||
+				(ligne + colonne == 3 && this.plateau.deuxiÃ¨meDiagonaleComplÃ¨teEtVictorieuse());
 	}
 
 }
