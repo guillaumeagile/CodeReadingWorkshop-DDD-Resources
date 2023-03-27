@@ -23,6 +23,12 @@ This repo contains exercises to use, as well as a Starting Package for the first
 * Exercises to use
 * A meeting to run a retrospective after the clubs
 
+
+## Selected exercises
+
+https://github.com/carwow/elm-slider/blob/1fa48f4f02ce5518589c084d0823880b3db5fb7a/examples/Main.elm
+
+
 ## Get in touch
 
 hello@code-reading.org
