@@ -126,6 +126,8 @@ public class Quarto {
         this.piècesRestantesAJouer.add(new Pièce(true, true, true, true));
     }
 
+
+    
     public boolean estVide() {
         return this.plateau.estVide();
     }
