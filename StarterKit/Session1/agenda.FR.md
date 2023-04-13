@@ -15,24 +15,6 @@ Vous aurez besoin de:
 
 Take a few minutes to talk about your motivation for doing the club. This is important because it will help you support each other and make it more likely that your group will feel that the club sessions have value for them.
 
-## Connaissance de la structure du code
-
-### (5 mins) Independently - Notez les éléments de syntaxe:
-
-* avec lesquels vous êtes familiers
-* qui vous semblent peu clair ou confus
-
- > Le rôle de chaque bloc de texte est-il clair pour vous ?
- > Reconnaissez vous tous les opérateurs
- > Prenez le reste du temps pour réfléchir aux autres éléments qui ne vous sont pas familiers.
-
-### (5 mins) Together - Discuss
-
-* Give everyone a chance to read out their hopes and fears
-* Use the remaining time to discuss collectively what you want to get out of the club
-* Decide how long you want your sessions to be and how often you want to run them
-* Decide if the same person will facilitate all of the sessions or if you want to take turns
-* Think about how to accommodate members of your group who might have varying levels of experience and confidence
 
 ## First glance
 
@@ -57,6 +39,22 @@ Reflect also on what kind of knowledge you used in this exercise:
 
 * Knowledge of the domain, of the programming language? Of a framework?
 * What knowledge do you think might be needed to better understand this code?
+
+
+## Connaissance de la structure du code
+
+### (5 mins) Independently - Notez les éléments de syntaxe:
+
+* avec lesquels vous êtes familiers
+* qui vous semblent peu clair ou confus
+
+ > Le rôle de chaque bloc de texte est-il clair pour vous ?
+ > Reconnaissez vous tous les opérateurs
+ > Prenez le reste du temps pour réfléchir aux autres éléments qui ne vous sont pas familiers.
+
+### (5 mins) Together - Discuss
+
+  * 
 
 ## Code structure
 
